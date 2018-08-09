@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <title>ProInformatik V</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   </head>  
 
-  <body>
+  <body style="font-family:verdana,arial,sans-serif;font-size:12px;">
     <h1>ProInformatik V</h1>
     
     <p>
@@ -17,12 +19,12 @@
     <h2>
       Die Veranstaltung auf einen Blick
     </h2>
-      
+
     <ul>
       <li>Zeitraum: 6.8. - 10.8.</li>
       <li>Ort: Institut für Informatik, Takustr. 9</li>
       <ul>
-        <li>Unterricht: 9-12 Uhr in Raum 049/Erdgeschoss (evt. Verlegung in Raum K40/Untergeschoss)</li>
+        <li>Unterricht: 9-12 Uhr in Raum 049/Erdgeschoss</li>
         <li>Projekt: 13-17 Uhr in Raum K44/Untergeschoss</li>
       </ul>
       <li>Kursleitung: Till Zoppke, <a href="mailto:zoppke@zedat.fu-berlin.de"></a></li>
@@ -30,48 +32,155 @@
     </ul>
 
     <h2>
-      Linksammlung zur WebVR Entwicklung mit A-FRAME
+      VR-Welten 
     </h2>
     
+    <div>
+      <a-scene embedded class="aframe">
+        <a-assets>
+          <img id="arealworld" src="https://cdn.glitch.com/b5a90ece-7fb7-4ef9-b3a6-ad3c6de17e88%2Farealworld.png?1533846987950"/>
+        </a-assets>
+        <a-sky color="#888"></a-sky>
+        <a-link href="https://arealworld.glitch.me/" title="A Real World" src="#arealword"></a-link>
+      </a-scene>
+    </div>
+    
+    <h2>
+      Wochenplanung
+    </h2>
+    
+    <table border="1" style="word-wrap:normal">
+      <colgroup>
+        <col width="50">
+        <col width="100">
+        <col width="100">
+        <col width="100">
+        <col width="100">
+        <col width="100">
+      </colgroup>
+      <tr>
+        <th></th>
+        <th>Montag</th>
+        <th>Dienstag</th> 
+        <th>Mittwoch</th>
+        <th>Donnerstag</th>
+        <th>Freitag</th>
+      </tr>
+      <tr>
+        <td><b>Vor&shy;mittag</b></td>
+        <td>Auftakt</td>
+        <td>Live-Coding, Projekt&shy;planung</td> 
+        <td>IT-Sicherheit, Kryptoparty</td>
+        <td>Arbeit am Projekt</td>
+        <td>Vorlesung ALP I</td>
+      </tr>
+      <tr>
+        <td><b>Nach&shy;mittag</b></td>
+        <td>Lernkarten: Grundlagen, Werkzeuge, A-FRAME</td> 
+        <td>Arbeit am Projekt</td>
+        <td>Arbeit am Projekt</td>
+        <td>13 Uhr: Besuch AG Biorobotik</td>
+        <td>13 Uhr: Abschluss&shy;präsentation</td>
+      </tr>
+      <tr>
+        <td><b>Ab&shy;schluss</b></td>
+        <td>Rundgang: Spielwiesen</td> 
+        <td>Aktueller Stand Projekt</td>
+        <td>Aktueller Stand Projekt</td>
+        <td>Aktueller Stand Projekt</td>
+        <td>15:00-16:15 Ekursion zum VR-Adventure 'Exit VR'</td>
+      </tr>
+    </table>
+    
+    
+    <h2>
+      Linksammlung zur WebVR Entwicklung mit A-FRAME
+    </h2>      
+
     <ul>
       <li><a href="https://aframe.io" target="_blank">A-FRAME WebVR Framework: Dokumentation und Beispiele</a></li>
       <li><a href="https://aframe.io/aframe-school/#/" target="_blank">A-FRAME School: Online Tutorial</a></li>
-      <li><a href="https://vrketing.de/tutorial-einfuehrung-in-a-frame" target="_blank">Deutschsprachiges VR Tutorial</a></li>
+      <li><a href="https://vrketing.de/tutorial-einfuehrung-in-a-frame" target="_blank">Deutschsprachiges VR Tutorial (veraltet)</a></li>
+      <li><a href="http://vrjump.de/aframe-einstieg" target="_blank">Schneller Einstieg in die WebVR Entwicklung mit A-Frame (z.T. veraltet)</a></li>
       <li><a href="https://aframevr-slack.herokuapp.com" target="_blank">Slack-Chat zu A-FRAME</a></li>
       <li><a href="https://www.youtube.com/watch?v=dv6_C4UqTfs.com" target="_blank">A-FRAME Video Tutorial von Sonar Systems</a></li>
       <li><a href="https://hackathon.virtuleap.com" target="_blank">Virtuleap VR Hackathon</a></li>
+      <li><a href="http://www.landsendgame.com" target="_blank">Lands End - VR Game</a></li>
+      <li><a href="https://www.flickr.com/search/?text=equirectangular" target="_blank">Equirectangular Images (für a-sky)</a></li>
+      
+    </ul>
+
+    <h2>
+      Lernkarten
+    </h2>
+  
+    <p>
+      Auf einigen Lernkarten finden Sie <i class="fas fa-arrow-circle-right"></i> Referenzen auf Internet-Quellen, die hier verlinkt sind.
+    </p>
+    
+    <h3>
+      Werkzeuge
+    </h3>
+    
+    <ul>
+      <li><b>git &amp; github</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://github.com" target="_blank">github.com</a></li>
+      <li><b>glitch</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://glitch.com" target="_blank">glitch.com</a></li>
+      <li><b>Tastaturkürzel</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://gist.github.com/mrliptontea/4c793ebdf72ed145bcbf" target="_blank">Sublime-Tastaturkürzel, von denen die meisten auch in glitch funktionieren</a></li>
     </ul>
     
+    <h3>
+      Grundlagen
+    </h3>
+    
+    <ul>
+      <li><b>HTML</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg/Kapitel1" target="_blank">Tutorial: Grundgerüst einer HTML-Seite</a></li>
+      <li><b>HTML</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://glitch.com/edit/#!/v-website" target="_blank">Eine einfache Website</a></li>
+      <li><b>Hexadezimalsystem</b> <i class="fas fa-arrow-circle-right"></i> <a href="http://www.c-howto.de/tutorial/einfuehrung/binaersystem/" target="_blank">Tutorial zum Binär- und Hexadezimalsystem</a></li>
+      <li><b>Hexadezimalsystem</b> <i class="fas fa-arrow-circle-right"></i> <a href="http://games.penjee.com/binary-numbers-game/" target="_blank">Binary Blitz</a></li>
+      <li><b>Syntax</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://glitch.com/edit/#!/v-syntax" target="_blank">Syntaxfehler</a></li>
+      <li><b>Lesbarkeit</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://glitch.com/edit/#!/v-indentation" target="_blank">Seite zum Einrücken</a></li>
+    </ul>
+    
+    <h3>
+      A-FRAME
+    </h3>
+
+    <ul>
+      <li><b>Geometrische Körper</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://glitch.com/~aframe" target="_blank">Hello WebVR</a></li>
+      <li><b>RGB Farbkodierung</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://html-color-codes.info/webfarben_hexcodes/" target="_blank">RGB Farbmischer</a></li>
+      <li><b>Spielwiese</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://aframe.io/docs/0.8.0/introduction/" target="_blank">Offizielle A-FRAME Dokumentation</a></li>
+      <li><b>Animationen - Clickable - GameOver - Texturen</b> <i class="fas fa-arrow-circle-right"></i> <a href="https://glitch.com/edit/#!/cake-professor?path=index.html:1:0" target="_blank">Bsp: cake-professor</a></li>
+    </ul>
+
     <h2>
-      Links von den Lernkarten
+      Teilnehmerbereich
+    </h2>
+      
+    <p>
+      Fügen Sie hier Ihre eigenen Inhalte in die Seite ein.
+    </p>
+    
+    <h2>
+       Stimmen der Teilnehmenden
+    </h2>
+        <!-- fügen sie hier ihre statements ein-->
+      Ein cooler Kurs! ;-)
+      Wer war das?
+      Hallooo
+      Aha. 
+
+
+    <!-- end of statements -->
+    
+    <h2>
+      VR-Spielwiesen
     </h2>
     
     <ul>
-      <li>Werkzeuge: git &amp; github <a href="https://github.com" target="_blank">github.com</a></li>
-      <li>Werkzeuge: glitch <a href="https://glitch.com" target="_blank">glitch.com</a></li>
-      <li>Grundlagen: HTML <a href="https://wiki.selfhtml.org/wiki/HTML/Tutorials/Einstieg/Kapitel1" target="_blank">Tutorial: Grundgerüst einer HTML-Seite</a></li>
-      <li>Grundlagen: HTML <a href="https://glitch.com/edit/#!/v-website" target="_blank">Eine einfache Website</a></li>
-      <li>Grundlagen: Hexadezimalsystem <a href="http://www.c-howto.de/tutorial/einfuehrung/binaersystem/" target="_blank">Tutorial zum Binär- und Hexadezimalsystem</a></li>
-      <li>Grundlagen: Hexadezimalsystem <a href="http://games.penjee.com/binary-numbers-game/" target="_blank">Binary Blitz</a></li>
-      <li>Grundlagen: Syntax <a href="https://glitch.com/edit/#!/v-syntax" target="_blank">Syntaxfehler</a></li>
-      <li>Grundlagen: Lesbarkeit <a href="https://glitch.com/edit/#!/v-indentation" target="_blank">Seite zum Einrücken</a></li>
-      
+      <li><b></b><a href="https://welt.glitch.me/" target="_blank">Spielwiese 1</a></li>
+      <li><b></b><a href="https://arealworld.glitch.me/" target="_blank">A Real World</a></li>
+      <li><b></b><a href="https://furry-baritone.glitch.me/" target="_blank">A Real World</a></li>
     </ul>
-    
-    <h2>
-      Und das sagen unsere Teilnehmenden zum Kurs:
-    </h2>
-    <!-- Fügen Sie hier Ihre Statements ein -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- end of statements -->
     
     
   </body>
